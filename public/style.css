@@ -1,0 +1,125 @@
+
+body {
+    background: linear-gradient(to bottom, #e6ffe6, #cceccc); 
+    font-family: Arial, sans-serif;
+    color: #003300; 
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+.title {
+    background-color: #f4fff4;
+    border: 2px solid #006600;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 102, 0, 0.1); 
+    text-align: center;
+    padding: 20px;
+    color: #003300; 
+    margin: 20px;
+}
+
+p {
+    text-align: justify;
+    color: #004d00; 
+    margin-left: 70px;
+    margin-right: 20px;
+}
+
+/* Table styling */
+table {
+    width: 80%;
+    max-width: 700px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 102, 0, 0.1);
+}
+
+th {
+    background-color: #006600; 
+    color: white;
+    padding: 15px;
+}
+
+td {
+    border: 1px solid #006600;
+    padding: 10px;
+    text-align: center;
+    background-color: #e6ffe6;
+}
+
+
+.form_wordbuilding, .result {
+    background-color: #f4fff4; 
+    border: 2px solid #006600;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 102, 0, 0.1);
+    padding: 20px;
+    max-width: 700px;
+    margin: 20px auto;
+    color: #003300; 
+}
+
+.result { 
+    text-align: center;
+}
+
+
+.form_wordbuilding .form-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.form_wordbuilding label {
+    font-size: 16px;
+    flex: 1;
+    text-align: right;
+    margin-right: 10px;
+    color: #004d00;
+}
+
+.form_wordbuilding select {
+    flex: 2;
+    padding: 7px;
+    border: 1px solid #006600;
+    border-radius: 5px;
+    background-color: #ffffff; 
+    font-size: 16px;
+    color: #003300;
+}
+
+
+.form_wordbuilding input[type="submit"] {
+    background-color: #006600; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form_wordbuilding input[type="submit"]:hover {
+    background-color: #00b339; 
+}
+
+.form-submit { 
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #006600; 
+    color: white;
+    margin-top: 20px;
+}
