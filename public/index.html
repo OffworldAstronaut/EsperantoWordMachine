@@ -9,200 +9,40 @@
 </head>
 
 <body>
+    <!--Website introduction-->
     <div class="title">
         <h1>Esperanto Word Machine</h1>
 
         <p>
-            One of the most impressive features of the Esperanto language is the easy building and modification of words
-            and
-            concepts, made possible by it's simple and extremely regular grammatical rules.
+            Esperanto is a language designed to unite people across linguistic and cultural boundaries. Created in the late 19th century by the pacifist L. L. Zamenhof, it was envisioned as a neutral and easy-to-learn second language for everyone, promoting global communication, mutual understanding, and peace. Its unique grammar and vocabulary are built on simplicity and consistency, making it accessible to learners of all backgrounds.
         </p>
         <p>
-            This webpage's goal is the practical demonstration of this linguistical feature. <br>
-            Before the "Word Machine" per se, there's three tables belowfor the prefixes, roots, suffixes and declensions
-            available in
-            this interface.
+            One of Esperanto's most remarkable features is how effortlessly words and concepts can be created, modified, and understood. Thanks to its straightforward and extremely regular grammatical structure, anyone can combine prefixes, roots, suffixes, and endings to express even complex ideas with clarity and precision.
         </p>
+        <p>
+            We've provided three tables below that introduce (some of the) the prefixes, roots, suffixes, and grammatical endings necessary to build words in the language. Keep in mind that creating "words" carelessly rapidly leads to gibberish! 
+        </p>
+        <p>
+            Want to know if your word already formally exists in the language? Check a <a href="https://www.esperanto-panorama.net/vortaro/eoen.htm" target="_blank">dictionary</a>!
+        </p>
+        <p>
+            Contributions are very much welcome! <a href="https://github.com/OffworldAstronaut/EsperantoWordMachine" target="_blank">Here's the GitHub repository</a>! 
+        </p>
+        <p>
+            ✪ <b>Join us in celebrating a language that strives to equally bring the world closer together!</b> 
+        </p>
+        
+    
     </div>
+    
+    <div id="tables-container"></div>
 
-    <table>
-        <tr>
-            <th colspan="2">
-                <h2>Prefixes</h2>
-            </th>
-        </tr>
-        <tr>
-            <td>
-                mal-
-            </td>
-            <td>
-                opposition
-            </td>
-        </tr>
-        <tr>
-            <td>
-                mis-
-            </td>
-            <td>
-                "incorrectly"
-            </td>
-        </tr>
-        <tr>
-            <td>
-                eks-
-            </td>
-            <td>
-                former / "ex-"
-            </td>
-        </tr>
-        <tr>
-            <td>
-                re-
-            </td>
-            <td>
-                over again / back again
-            </td>
-        </tr>
-        <tr>
-            <td>
-                pra-
-            </td>
-            <td>
-                primordial / primitive / "proto-"
-            </td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <th colspan="2">
-                <h2>Roots</h2>
-            </th>
-        </tr>
-        <tr>
-            <td>
-                pac-
-            </td>
-            <td>
-                "peace"
-            </td>
-        </tr>
-        <tr>
-            <td>
-                esper-
-            </td>
-            <td>
-                "hope"
-            </td>
-        </tr>
-        <tr>
-            <td>
-                popol-
-            </td>
-            <td>
-                "people" / "population"
-            </td>
-        </tr>
-        <tr>
-            <td>
-                fundament-
-            </td>
-            <td>
-                "foundation"
-            </td>
-        </tr>
-        <tr>
-            <td>
-                san-
-            </td>
-            <td>
-                "health"
-            </td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <th colspan="2">
-                <h2>Suffixes</h2>
-            </th>
-        </tr>
-        <tr>
-            <td>
-                -ar-
-            </td>
-            <td>
-                "a collective group without specific number"
-            </td>
-        </tr>
-        <tr>
-            <td>
-                -ad-
-            </td>
-            <td>
-                "frequent, repeated or continual action"
-            </td>
-        </tr>
-        <tr>
-            <td>
-                -in-
-            </td>
-            <td>
-                "female"
-            </td>
-        </tr>
-        <tr>
-            <td>
-                -et-
-            </td>
-            <td>
-                diminutive
-            </td>
-        </tr>
-        <tr>
-            <td>
-                -estr-
-            </td>
-            <td>
-                "a leader" / "a boss"
-            </td>
-        </tr>
-    </table>
-    <table>
-        <tr>
-            <th colspan="2">
-                <h2>Declensions</h2>
-            </th>
-        </tr>
-        <tr>
-            <td>
-                -o
-            </td>
-            <td>
-                characterizes a noun
-            </td>
-        </tr>
-        <tr>
-            <td>
-                -a
-            </td>
-            <td>
-                characterizes an adjective
-            </td>
-        </tr>
-        <tr>
-    </table>
-
+    <!--The form for building the words-->
     <div class="form_wordbuilding">
         <form action="post" id="wordMachineForm">
             <div class="form-row">
                 <label for="choose_prefix">Choose a prefix:</label>
                 <select name="choose_prefix" id="choose_prefix">
-                    <option value="mal">mal</option>
-                    <option value="mis">mis</option>
-                    <option value="eks">eks</option>
-                    <option value="re">re</option>
-                    <option value="pra">pra</option>
                     <option value="">none</option>
                 </select>
             </div>
@@ -210,32 +50,19 @@
             <div class="form-row">
                 <label for="choose_root">Choose a root:</label>
                 <select name="choose_root" id="choose_root">
-                    <option value="pac">pac</option>
-                    <option value="esper">esper</option>
-                    <option value="popol">popol</option>
-                    <option value="fundament">fundament</option>
-                    <option value="san">san</option>
                 </select>
             </div>
     
             <div class="form-row">
                 <label for="choose_suffix">Choose a suffix:</label>
                 <select name="choose_suffix" id="choose_suffix">
-                    <option value="ar">ar</option>
-                    <option value="ad">ad</option>
-                    <option value="in">in</option>
-                    <option value="et">et</option>
-                    <option value="estr">estr</option>
                     <option value="">none</option>
                 </select>
             </div>
     
             <div class="form-row">
                 <label for="choose_declension">Choose a declension:</label>
-                <select name="choose_declension" id="choose_declension">
-                    <option value="o">o</option>
-                    <option value="a">a</option>
-                </select>
+                <select name="choose_declension" id="choose_declension"></select>
             </div>
     
             <div class="form-submit">
@@ -251,7 +78,67 @@
         <p>Translation: <span id="translation">--</span></p>
     </div>
 
+    <!--This script constructs the tables and populates the dropdowns-->
+    <script>
+        async function fetchData() {
+            // fetchs the grammatical data 
+            const response = await fetch('data.json');
+            const data = await response.json();
+    
+            const container = document.getElementById('tables-container');
+    
+            // creates an entire table
+            function createTable(title, entries, key, value) {
+                // header and first row 
+                const table = document.createElement('table');
+                const header = document.createElement('tr');
+                header.innerHTML = `<th colspan="2"><h2>${title}</h2></th>`;
+                table.appendChild(header);
+    
+                entries.forEach(entry => {
+                    // all of the other rows 
+                    const row = document.createElement('tr');
+                    row.innerHTML = `<td>${entry[key]}</td><td>${entry[value]}</td>`;
+                    table.appendChild(row);
+                });
+    
+                return table;
+            }
+    
+            // generates the tables for each grammatical class 
+            container.appendChild(createTable('Prefixes', data.prefixes, 'prefix', 'meaning'));
+            container.appendChild(createTable('Roots', data.roots, 'root', 'meaning'));
+            container.appendChild(createTable('Suffixes', data.suffixes, 'suffix', 'meaning'));
+            container.appendChild(createTable('Declensions', data.declensions, 'declension', 'meaning'));
+    
+            // function to populate the dropdowns with the .json data
+            function populateDropdown(id, items, key) {
+                const select = document.getElementById(id);
+                items.forEach(item => {
+                    const option = document.createElement('option');
+                    option.value = item[key];
+                    option.textContent = item[key];
+                    select.appendChild(option);
+                });
+            }
+    
+            // and populates the dropdowns with the data 
+            populateDropdown('choose_prefix', data.prefixes, 'prefix');
+            populateDropdown('choose_root', data.roots, 'root');
+            populateDropdown('choose_suffix', data.suffixes, 'suffix');
+            populateDropdown('choose_declension', data.declensions, 'declension');
+        }
+    
+        // only executes everything when the page is fully loaded
+        document.addEventListener('DOMContentLoaded', fetchData);
+    </script>    
+
+    <!--Script that connects the .html to the backend-->
     <script src="script.js"></script>
+
+    <footer>
+        Originally created by <a href="https://github.com/OffworldAstronaut">Rafael Amorim</a>, licensed under GPL3, free for all of the human brotherhood
+    </footer>
 
 </body>
 </html>

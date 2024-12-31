@@ -60,9 +60,12 @@ When you clone and install, the files are going to be organized this way:
 └── README.md           # Documentation
 ```
 
-## Known issues
+## Known issues / Future goals
 
 1. MyMemory is easy to use but not really that good at Esperanto, switching to another translation API is a goal, preferably a FOSS one (main candidate: LibreTranslate); 
+2. `PORT = 80` might raise an error, if this occurs, change the variable on `server.js` to another port number, like `3000`; 
+3. More word parts are needed;
+4. The interface needs a version in Esperanto; 
 
 ## Contributing
 
@@ -81,4 +84,4 @@ This project is licensed under the GNU GPL3;
 
 See the LICENSE file for more details! 
 
->No one owns Esperanto, one should not profit from hope of a new world.
+>*No one owns Esperanto, one should not profit from the hope of a new world.*
