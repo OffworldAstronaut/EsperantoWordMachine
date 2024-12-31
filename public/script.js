@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         
-        fetch("http://localhost:3000/generate", {
+        fetch("/api/generate", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
