@@ -1,28 +1,32 @@
 {
     "prefixes": [
-        { "prefix": "mal", "meaning": "opposition" },
-        { "prefix": "mis", "meaning": "incorrectly" },
-        { "prefix": "eks", "meaning": "former / ex-" },
-        { "prefix": "re", "meaning": "over again / back again" },
-        { "prefix": "pra", "meaning": "primordial / proto-" }
+        { "prefix": "mal",      "meaning": "opposition" },
+        { "prefix": "mis",      "meaning": "incorrectly" },
+        { "prefix": "eks",      "meaning": "former / ex-" },
+        { "prefix": "re",       "meaning": "over again / back again" },
+        { "prefix": "pra",      "meaning": "primordial / proto-" },
+        { "prefix": "ge",       "meaning": "of the two biological sexes"},
+        { "prefix": "bo",       "meaning": "relationship by marriage"}
     ],
     "roots": [
-        { "root": "pac", "meaning": "peace" },
-        { "root": "esper", "meaning": "hope" },
-        { "root": "popol", "meaning": "people / population" },
-        { "root": "fundament", "meaning": "foundation" },
-        { "root": "san", "meaning": "health" },
-        { "root": "sent", "meaning": "feeling"}
+        { "root": "pac",        "meaning": "peace" },
+        { "root": "esper",      "meaning": "hope" },
+        { "root": "popol",      "meaning": "people / population" },
+        { "root": "fundament",  "meaning": "foundation" },
+        { "root": "san",        "meaning": "health" },
+        { "root": "sent",       "meaning": "feeling"}
     ],
     "suffixes": [
-        { "suffix": "ar", "meaning": "a collective group without specific number" },
-        { "suffix": "ad", "meaning": "frequent, repeated or continual action" },
-        { "suffix": "in", "meaning": "female" },
-        { "suffix": "et", "meaning": "diminutive" },
-        { "suffix": "estr", "meaning": "a leader / boss" }
+        { "suffix": "ar",       "meaning": "a collective group without specific number" },
+        { "suffix": "ad",       "meaning": "frequent, repeated or continual action" },
+        { "suffix": "in",       "meaning": "female" },
+        { "suffix": "et",       "meaning": "diminutive" },
+        { "suffix": "estr",     "meaning": "a leader / boss" },
+        { "suffix": "ej",       "meaning": "place destined to... (according to the root)"},
+        { "suffix": "eg",       "meaning": "augmentative form"}
     ],
     "declensions": [
-        { "declension": "o", "meaning": "characterizes a noun" },
-        { "declension": "a", "meaning": "characterizes an adjective" }
+        { "declension": "o",    "meaning": "characterizes a noun" },
+        { "declension": "a",    "meaning": "characterizes an adjective" }
     ]
 }
