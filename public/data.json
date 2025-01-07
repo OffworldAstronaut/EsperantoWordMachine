@@ -14,7 +14,9 @@
         { "root": "popol",      "meaning": "people / population" },
         { "root": "fundament",  "meaning": "foundation" },
         { "root": "san",        "meaning": "health" },
-        { "root": "sent",       "meaning": "feeling"}
+        { "root": "sent",       "meaning": "feeling"},
+        { "root": "vort",       "meaning": "word"},
+        { "root": "vok",        "meaning": "voice"}
     ],
     "suffixes": [
         { "suffix": "ar",       "meaning": "a collective group without specific number" },

@@ -18,7 +18,7 @@ The Esperanto Word Machine is a web-based tool that generates Esperanto words by
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/EsperantoWordMachine.git
+   git clone https://github.com/OffworldAstronaut/EsperantoWordMachine.git
    cd EsperantoWordMachine
    ```
 
